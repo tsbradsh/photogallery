@@ -1,0 +1,171 @@
+body {
+    margin: 0 auto;
+    width: 485px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+}
+main {
+    display: grid;
+    background-color: #ffffff;
+}
+p {
+    font-size: 1.25em;
+    padding: 10px;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+figure {
+    position: relative;
+    display: inline-block;
+    margin: 10px auto;
+}
+figcaption {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+    top: 5%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+#chile, #hawaii, #moab {
+    top: 90%;
+}
+#italy {
+    top: 95%;
+}
+.light {
+    color: #ffffff;
+}
+.dark {
+    color: #000000;
+}
+nav {
+    background-color: #000000;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 40px;
+    list-style: none;
+}
+li:last-child {
+    position: fixed;
+    text-decoration: none;
+    bottom: 2%;
+    right: 2%;
+}
+nav a {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+header {
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+header p {
+    margin: 0 auto;
+}
+h1 {
+    color: #007d7b;
+    background-color: #ffffff;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding:10px 0;
+}
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+h4 {
+    display: none;
+}
+section p {
+    color: #ffffff;
+    text-align: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+label {
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 5px;
+}
+input {
+    text-transform: uppercase;
+    color: #007d7b;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#submit {
+    margin: 15px auto;
+    color: #ffffff;
+    background-color: #007d7b;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+}
+footer {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
+}
+@media screen and (min-width: 880px) {
+    body {
+        width: 870px;
+    }
+    main {
+        display: grid;
+        grid-template-areas:
+        "figure figure"
+        "figure figure"
+        "figure figure"
+        "figure figure"
+        "figure figure"
+        "figure figure";
+    }
+    h1 {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+@media screen and (min-width: 1300px){
+    body {
+        width: 1300px;
+    }
+    main {
+        display: grid;
+        grid-template-areas:
+        "figure figure figure"
+        "figure figure figure"
+        "figure figure figure"
+        "figure figure figure";
+    }
+    ul {
+        justify-content: flex-end;
+    }
+}
